@@ -8,7 +8,7 @@
 
     --white: whitesmoke;
     --white-2: rgb(240, 236, 231);
-    --black: #353535;
+    --black: #303336;
     --comments-bg: rgba(122, 100, 113, 0.99);
 
     /* Font */
@@ -20,7 +20,7 @@
 
     /* Other configurations */
     --main-min-width: 50vh;
-    --main-background: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/Fries_2.jpg");
+    --main-background: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/Affärsplan.jpg");
     --mobile-background: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("../images/Fries_2.jpg");
     --background-offset: top;
 }

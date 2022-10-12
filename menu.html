@@ -21,7 +21,9 @@
 
     <!-- Javascript -->
     <script type="text/json" src="data/menu.json"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+        integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
@@ -54,7 +56,7 @@
     <nav>
         <ul>
             <li class="nav-left">
-                <h1 class="medium-text transition">ED's BURGERS</h1>
+                <h1 class="medium-text transition">NORRVED</h1>
             </li>
 
             <div class="hideable-content-nav">
@@ -62,13 +64,13 @@
                     <a href="index.html" class="nav-text link">HOME</a>
                 </li>
                 <li class="nav-interactable selected">
-                    <a href="menu.html" class="nav-text link">MENU</a>
+                    <a href="menu.html" class="nav-text link">VÅR AFFÄRSPLAN</a>
                 </li>
                 <li class="nav-interactable">
-                    <a href="contact.html" target="blank" class="nav-text link">CONTACT</a>
+                    <a href="contact.html" class="nav-text link">CONTACT</a>
                 </li>
                 <li class=" nav-interactable">
-                    <a href="reservation.html" target="blank" class="nav-text link">RESERVATIONS</a>
+                    <a href="reservation.html" class="nav-text link">MISCELLANEOUS</a>
                 </li>
             </div>
 
@@ -90,8 +92,8 @@
 
     <main>
         <div class="grid-container">
-            <p class="small-text light underline fit-content">BROWSE</p>
-            <p class="large-text pos-top">Ed's Menu</p>
+            <p class="small-text light underline fit-content">Vår bakgrund</p>
+            <p class="large-text pos-top">Affärsplan</p>
 
             <div class="subgrid-2">
                 <div class="width-50 background-hover-shift">
@@ -106,29 +108,25 @@
             <img class="description-image" src="images/PäronShake.jpg" alt="" srcset="">
 
             <div class="description-divison border-left">
-                <p class="tip">Om våra burgare</p>
-                <h3 class="description-header medium-text">Vårt kött och bröd</h3>
+                <p class="tip">Vår produkt</p>
+                <h3 class="description-header medium-text">Vad erbjuder vi?</h3>
                 <p class="description-text smaller-text light">
-                    Ed’s burgare görs för hand av egenmald färs, som vi
-                    maler varje dag, på hängmörat nötkött från svenska
-                    gårdar. Då vet vi att djurhållningen är schysst. Då
-                    blir köttet fint och smakar bra. Ed gillar den klassiska
-                    enkla amerikanska hamburgaren, dvs inte för mycket
-                    tjafs, det är färsen som ska ge smak. Burgernörd som
-                    Ed är innebär att beef-to-bun relationen är viktig,
-                    förhållandet mellan köttet och burgaren måste vara
-                    rätt. Därför är våra enkelburgare 140 g och en dubbel
-                    innebär 2x100 g. Vårt bröd får vi från ett litet bageri.
-                    Det är gjort så att det suger smaken så där lagom.
-                    Vill du ha glutenfritt? Det grejar vi. Fråga personalen.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quo saepe sint ad eaque facere
+                    tempora delectus nostrum suscipit quam cum adipisci cupiditate itaque placeat amet perferendis
+                    soluta tenetur quisquam atque quod, alias rerum. Ea facere vel voluptatum animi a magnam laudantium
+                    aliquid commodi quasi? Cupiditate velit aperiam nisi consequuntur asperiores quia est, quod, odit
+                    assumenda ut delectus officia. Dolor saepe, in impedit neque facere odio commodi corrupti veritatis,
+                    consectetur illum quae cupiditate deserunt aliquid natus debitis delectus culpa laboriosam expedita
+                    ex nesciunt maiores. Beatae quos nemo, facilis assumenda illum corrupti? Veniam, illo quia explicabo
+                    est dignissimos unde cupiditate quae!
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="section-menu section-shadow" id="menuApp">
+    <!-- <section class="section-menu section-shadow" id="menuApp">
 
-        <div class="section-header">   
+        <div class="section-header">
             <h2>VÅR MENY</h2>
             <img src="images/Embellishment_Cropped.png" alt="">
         </div>
@@ -137,19 +135,19 @@
             <div class="menu-header">
                 <input type="radio" id="category-burger" v-bind:value="menu.burgers" v-model="category" />
                 <label for="category-burger">BURGERS</label>
-        
+
                 <input type="radio" id="category-sides" v-bind:value="menu.sides" v-model="category" />
                 <label for="category-sides">SIDES</label>
-        
+
                 <input type="radio" id="category-dips" v-bind:value="menu.dips" v-model="category" />
-                <label for="category-dips">DIPS</label>
+                <label for="category-dips">DIPS</label> -->
 
                 <!-- <input type="search" name="Query Menu" id="menuSearchBar" v-model="menuQuery">
                 <label for="menuSearchBar"> {{menuQuery}} </label> -->
-            </div>
-            <div class="menu-category"> 
+            <!-- </div>
+            <div class="menu-category">
                 <transition-group appear @before-enter="beforeEnter" @enter="enter">
-                    <div class="menu-item" v-for="(item, index) in category.types" :data-index="index" :key="category" >
+                    <div class="menu-item" v-for="(item, index) in category.types" :data-index="index" :key="category">
                         <header class="item-header">
                             <h4> {{ item.name }} </h4>
                             <p> {{ item.price }} </p>
@@ -158,8 +156,8 @@
                     </div>
                 </transition-group>
             </div>
-        </div>   
-    </section>
+        </div>
+    </section> -->
 
     <footer>
         <div class="footer-container">
