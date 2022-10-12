@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- General -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed's Burgers</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables-menu.css">
+    <link rel="stylesheet" href="css/configurations.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tooltip.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/description.css">
+    <link rel="stylesheet" href="css/comments.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <!-- Javascript -->
+    <script type="text/json" src="data/menu.json"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/general.js"></script>
+    <!-- <script type="importmap">
+        {
+          "imports": {
+            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+          }
+        }
+      </script> -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="js/vue.js" type="module"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,700;1,200;1,300;1,500;1,700&family=Quicksand&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="nav-background">
+    </div>
+
+    <nav>
+        <ul>
+            <li class="nav-left">
+                <h1 class="medium-text transition">ED's BURGERS</h1>
+            </li>
+
+            <div class="hideable-content-nav">
+                <li class="nav-interactable">
+                    <a href="index.html" class="nav-text link">HOME</a>
+                </li>
+                <li class="nav-interactable selected">
+                    <a href="menu.html" class="nav-text link">MENU</a>
+                </li>
+                <li class="nav-interactable">
+                    <a href="contact.html" target="blank" class="nav-text link">CONTACT</a>
+                </li>
+                <li class=" nav-interactable">
+                    <a href="reservation.html" target="blank" class="nav-text link">RESERVATIONS</a>
+                </li>
+            </div>
+
+            <div class="hamburger-container">
+                <svg viewBox="0 0 110 65" width="40" height="40" class="hamburger-button" onclick="ToggleNavbar()">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                            <stop offset="0%" style="stop-color:rgb(177, 177, 177);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect fill="url(#grad1)" y="0" width="100" height="5" class="hamburger-segment segment-1"></rect>
+                    <rect fill="url(#grad1)" y="30" width="100" height="5" class="hamburger-segment segment-2"></rect>
+                    <rect fill="url(#grad1)" y="60" width="100" height="5" class="hamburger-segment segment-3"></rect>
+                </svg>
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="grid-container">
+            <p class="small-text light underline fit-content">BROWSE</p>
+            <p class="large-text pos-top">Ed's Menu</p>
+
+            <div class="subgrid-2">
+                <div class="width-50 background-hover-shift">
+                    <p class="inverted-text grid-flex-size small-text bold" onclick="Redirect('index.html')">HOME</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="section-2" id="about-us">
+        <div class="description-container">
+            <img class="description-image" src="images/PäronShake.jpg" alt="" srcset="">
+
+            <div class="description-divison border-left">
+                <p class="tip">Om våra burgare</p>
+                <h3 class="description-header medium-text">Vårt kött och bröd</h3>
+                <p class="description-text smaller-text light">
+                    Ed’s burgare görs för hand av egenmald färs, som vi
+                    maler varje dag, på hängmörat nötkött från svenska
+                    gårdar. Då vet vi att djurhållningen är schysst. Då
+                    blir köttet fint och smakar bra. Ed gillar den klassiska
+                    enkla amerikanska hamburgaren, dvs inte för mycket
+                    tjafs, det är färsen som ska ge smak. Burgernörd som
+                    Ed är innebär att beef-to-bun relationen är viktig,
+                    förhållandet mellan köttet och burgaren måste vara
+                    rätt. Därför är våra enkelburgare 140 g och en dubbel
+                    innebär 2x100 g. Vårt bröd får vi från ett litet bageri.
+                    Det är gjort så att det suger smaken så där lagom.
+                    Vill du ha glutenfritt? Det grejar vi. Fråga personalen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-menu section-shadow" id="menuApp">
+
+        <div class="section-header">   
+            <h2>VÅR MENY</h2>
+            <img src="images/Embellishment_Cropped.png" alt="">
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-header">
+                <input type="radio" id="category-burger" v-bind:value="menu.burgers" v-model="category" />
+                <label for="category-burger">BURGERS</label>
+        
+                <input type="radio" id="category-sides" v-bind:value="menu.sides" v-model="category" />
+                <label for="category-sides">SIDES</label>
+        
+                <input type="radio" id="category-dips" v-bind:value="menu.dips" v-model="category" />
+                <label for="category-dips">DIPS</label>
+
+                <!-- <input type="search" name="Query Menu" id="menuSearchBar" v-model="menuQuery">
+                <label for="menuSearchBar"> {{menuQuery}} </label> -->
+            </div>
+            <div class="menu-category"> 
+                <transition-group appear @before-enter="beforeEnter" @enter="enter">
+                    <div class="menu-item" v-for="(item, index) in category.types" :data-index="index" :key="category" >
+                        <header class="item-header">
+                            <h4> {{ item.name }} </h4>
+                            <p> {{ item.price }} </p>
+                        </header>
+                        <p class="item-description"> {{ item.description }} </p>
+                    </div>
+                </transition-group>
+            </div>
+        </div>   
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <h2>
+                Ed's Burgers
+            </h2>
+
+            <div>
+                <h2 class="light">
+                    Kontakta oss!
+                </h2>
+                <p>
+                    Tillfällegatan 4, Norrtälje
+                </p>
+                <p>
+                    Tel. 0176-27 77 92
+                </p>
+                <p>
+                    E-post. ed@edsburgers.se
+                </p>
+            </div>
+            <div>
+                <h2 class="light">
+                    Länkar
+                </h2>
+                <p>
+                    <a href="https://www.facebook.com/eds-burgers" target="blank">Facebook</a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

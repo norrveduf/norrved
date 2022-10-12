@@ -1,0 +1,35 @@
+.tooltip {
+    position: absolute;
+    top: calc(100% + 0.5em);
+    left: 0;
+
+    background: darkgray;
+    color: white;
+    border-radius: 5px;
+
+    filter: opacity(0%);
+    transition: 0.15s ease-out;
+
+    user-select: none;
+    pointer-events: none;
+    width: fit-content;
+}
+
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    /* left: calc(50% - 5px); */
+    left: calc(1em - 5px);
+    border: solid darkgray 5px;
+    transform: rotate(45deg);
+    transform-origin: center;
+
+    width: 0px;
+    height: 0px;
+}
+
+.tooltip p {
+    padding: 5px;
+}

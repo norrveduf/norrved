@@ -1,0 +1,184 @@
+{
+    "burgers": {
+        "name": "Burgers",
+        "types": [
+        {
+            "id":"0", 
+            "name": "The Real Thing",
+            "description": "Plain burgare, kött och bröd", 
+            "price": "96/118kr" 
+        }, 
+
+        { 
+            "id":"1", 
+            "name": "Cheeseburgare",
+            "description": "En klassiker med kött, ost och bröd", 
+            "price": "99/121kr" 
+        }, 
+
+        { 
+            "id":"2", 
+            "name": "Ed's Favourite",
+            "description": "Husets majonnäs, krispsallad, bifftomat, silverlök och cheddearost", 
+            "price": "122/142kr" 
+        }, 
+
+        { 
+            "id":"3", 
+            "name": "Fat Cat",
+            "description": "Husets majonnäs, krispsallad, bifftomat, silverlök, cheddarost och varmrökt bacon", 
+            "price": "124/144kr" 
+        }, 
+
+        { 
+            "id":"4", 
+            "name": "Ruby",
+            "description": "Hemmagjord tryffelmajonnäs, krispsallad, picklad rödlök, bifftomat och gruyereost.", 
+            "price": "124/144kr" 
+        }, 
+
+        { 
+            "id":"5", 
+            "name": "Chevy",
+            "description": "Chèvre créme, picklad rödlök, jalapeños och pepperjackost.", 
+            "price": "124/144kr" 
+        }, 
+
+        { 
+            "id":"6", 
+            "name": "Triple Cheese Burger",
+            "description": "3x110g kött, cheddarost, pepperjackost, gruyereost och picklad gurka.", 
+            "price": "159kr" 
+        }, 
+
+        { 
+            "id":"7", 
+            "name": "Nancy",
+            "description": "Husets majonnäs, krispsallad, cheddarost, jalapeños och karamelliserad lök.", 
+            "price": "122/142kr" 
+        }, 
+
+        { 
+            "id":"8", 
+            "name": "Halloumi Burger",
+            "description": "Hemmagjord guacamole, krispsallad, bifftomat och picklad rödlök.", 
+            "price": "99/129kr" 
+        }, 
+
+        { 
+            "id":"9", 
+            "name": "Veg-Liz - enkel",
+            "description": "Vår vegetariska burgare. Husets majonnäs, krispsallad, silverlök och bifftomat.", 
+            "price": "119kr" 
+        }, 
+
+        { 
+            "id":"10", 
+            "name": "Mini Me - enkel",
+            "description": "110g plain burgare, kött och bröd", 
+            "price": "79kr" 
+        }, 
+
+        { 
+            "id":"11", 
+            "name": "Hot n' Smokey",
+            "description": "Spicy majonnäs, krispsallad, picklad rödlök, rökt cheddarost och vamrökt bacon.", 
+            "price": "126/146kr" 
+        }, 
+
+        { 
+            "id":"12", 
+            "name": "Big Al",
+            "description": "Chipotlemajonnäs, krispsallad, silverlök, vitlökskorv och cheddarost.", 
+            "price": "126/146kr" 
+        },
+
+        { 
+            "id":"12", 
+            "name": "Chokladburgare",
+            "description": "Coiwngiowneiognw", 
+            "price": "126/146kr" 
+        }
+        ]
+    },
+    "sides": {
+        "name": "Sides",
+        "types": [
+            {
+                "id": "0", 
+                "name": "Pommes med smält ost och jalapeños",
+                "price": "52kr"
+            },
+            
+            {
+                "id": "1", 
+                "name": "Sallad",
+                "price": "35kr"
+            },
+            
+            {
+                "id": "2",
+                "name": "Lökringar",
+                "price": "35kr"
+            },
+
+            {
+                "id": "3",
+                "name": "Coleslaw",
+                "price": "28kr"
+            },
+
+            {
+                "id": "4",
+                "name": "Sötpommes",
+                "price": "35kr"
+            },
+
+            {
+                "id": "5",
+                "name": "Pommes",
+                "price": "28kr"
+            }
+        ]
+    },
+    "dips": {
+        "name": "Dips", 
+        "types": [
+            {
+                "id": "0",
+                "name": "Guacamole",
+                "price": "28kr"
+            },
+
+            {
+                "id": "1",
+                "name": "Smält cheddarost",
+                "price": "18kr"
+            },
+
+            {
+                "id": "2",
+                "name": "Chévre créme",
+                "price": "18kr"
+            },
+
+            {
+                "id": "3",
+                "name": "Tryffelmajonnäs",
+                "price": "18kr"
+            },
+
+            {
+                "id": "4",
+                "name": "Barbeque",
+                "price": "18kr"
+            },
+
+            {
+                "id": "5",
+                "name": "Aioli",
+                "price": "18kr"
+            }
+        ]
+    }
+}

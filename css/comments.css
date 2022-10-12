@@ -1,0 +1,83 @@
+#HCB_comment_box #hcb_form_content,
+#HCB_comment_box #hcb_form_email,
+#HCB_comment_box #hcb_form_name,
+#HCB_comment_box #hcb_form_website {
+  background-color: var(--white);
+}
+
+#HCB_comment_box {
+    padding: 10em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: auto;
+    width: min(80%, 125em);
+    /* background-color: var(--comments-bg); */
+    font-family: "Quicksand" !important;
+}
+
+#HCB_comment_box .commentbox {
+    max-width: 100%;
+}
+
+#HCB_comment_box h3::before {
+    visibility: visible;
+    content: "Leave a comment!" !important;
+    font-family: "Montserrat";
+    font-size: var(--medium-font);
+    border-bottom: 1px var(--white) solid;
+    width: fit-content;
+}
+#HCB_comment_box h3 {
+    visibility: hidden;
+}
+
+#HCB_comment_box .date {
+    color: var(--black) !important;
+}
+
+#HCB_comment_box #hcb_msg {
+    font-size: var(--small-font) !important;
+    margin: 0.25em;
+}
+
+#HCB_comment_box .author-name {
+    font-size: calc(var(--medium-font) * 0.5);
+    color: var(--black) !important;
+}
+
+#HCB_comment_box .hcb-comment-body {
+    font-size: calc(var(--small-font) * 0.75) !important;
+    color: var(--black) !important;
+}
+
+#HCB_comment_box #hcb_form {
+    background: var(--white) !important;
+    padding: 1em;
+}
+
+#HCB_comment_box .comment {
+    background: var(--white) !important;
+    padding: 1em;
+}
+
+#HCB_comment_box .likes {
+    padding: 1em;
+    color: var(--black);
+    font-size: calc(var(--small-font) * 0.75) !important;
+}
+
+
+#HCB_comment_box .home-desc {
+    color: var(--black) !important;
+}
+
+#HCB_comment_box .btn {
+    border: none !important;
+    border-radius: 0 !important;
+    margin-bottom: 1em;
+}
+
+#HCB_comment_box .btn-secondary {
+    border: 1px var(--black) solid !important;
+    border-radius: 0 !important;
+}

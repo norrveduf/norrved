@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- General -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed's Burgers</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/configurations.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tooltip.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/description.css">
+    <link rel="stylesheet" href="css/comments.css">
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/general.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,700;1,200;1,300;1,500;1,700&family=Quicksand&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="nav-background">
+    </div>
+
+    <nav>
+        <ul>
+            <li class="nav-left">
+                <h1 class="medium-text transition">NORRVED</h1>
+            </li>
+
+            <div class="hideable-content-nav">
+                <li class="nav-interactable selected">
+                    <a href="index.html" class="nav-text link">HOME</a>
+                </li>
+                <li class="nav-interactable">
+                    <a href="menu.html" class="nav-text link">VÅR AFFÄRSPLAN</a>
+                </li>
+                <li class="nav-interactable">
+                    <a href="contact.html" class="nav-text link">CONTACT</a>
+                </li>
+                <li class=" nav-interactable">
+                    <a href="reservation.html" class="nav-text link">MISCELLANEOUS</a>
+                </li>
+            </div>
+
+            <div class="hamburger-container">
+                <svg viewBox="0 0 110 65" width="40" height="40" class="hamburger-button" onclick="ToggleNavbar()">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                            <stop offset="0%" style="stop-color:rgb(177, 177, 177);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect fill="url(#grad1)" y="0" width="100" height="5" class="hamburger-segment segment-1"></rect>
+                    <rect fill="url(#grad1)" y="30" width="100" height="5" class="hamburger-segment segment-2"></rect>
+                    <rect fill="url(#grad1)" y="60" width="100" height="5" class="hamburger-segment segment-3"></rect>
+                </svg>
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="grid-container">
+            <p class="small-text light underline fit-content">INTRODUKTION</p>
+            <p class="large-text pos-top">Norrved UF</p>
+
+            <div class="subgrid-2">
+                <div class="width-50 background-hover-shift" onclick="Redirect('menu.html')">
+                    <p class="inverted-text grid-flex-size small-text bold">AFFÄRSPLAN</p>
+                </div>
+
+                <div class="width-50 blurred-button inverted-on-hover" onclick="Redirect('reservation.html')">
+                    <p class="light small-text">VÅRT VED</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="section-2" id="about-us">
+        <div class="description-container">
+            <img class="description-image"
+                src="https://nationaltoday.com/wp-content/uploads/2021/07/shutterstock_1518533924-min.jpg" alt=""
+                srcset="">
+
+            <div class="description-divison border-left">
+                <p class="tip">Om oss</p>
+                <h3 class="description-header medium-text">Vi är Norrved</h3>
+                <p class="description-text smaller-text light">
+                    Vårt företag består av tre personer med stark entreprenöranda.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-3">
+        <div class="description-container">
+            <div class="description-divison border-right">
+                <p class="tip">Om oss</p>
+                <h3 class="description-header medium-text"> Välkommen till Ed's Burgers</h3>
+                <p class="description-text smaller-text light">
+
+                    Ed's Burgers är en hamburgarresturang i Norrtälje stad. Våra hamburgare är gjorda på närproducerad
+                    och färskt kött. Våra burgare är smakrika och näringsrika, så du kommer inte lämna oss med kurrande
+                    mage.
+                </p>
+            </div>
+            <img class="description-image" src="https://www.edsburgers.se/wp-content/uploads/2020/09/ed2.png" alt=""
+                srcset="">
+        </div>
+    </section>
+
+    <section class="section-3">
+        <div class="description-container description-image-background">
+            <div class="description-divison">
+                <p class="tip">About us</p>
+                <h3 class="description-header medium-text"> Välkommen till Ed's Burgers</h3>
+                <p class="description-text smaller-text light">
+                    Ed's Burgers är en hamburgarresturang i Norrtälje stad. Våra hamburgare är gjorda på närproducerad
+                    och färskt kött. Våra burgare är smakrika och näringsrika, så du kommer inte lämna oss med kurrande
+                    mage.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <h2>
+                Norrved UF
+            </h2>
+
+            <div>
+                <h2 class="light">
+                    Kontakta oss!
+                </h2>
+                <p>
+                    Tillfällegatan 4, Norrtälje
+                </p>
+                <p>
+                    Tel. 0176-27 77 92
+                </p>
+                <p>
+                    E-post. norrveduf@gmail.com
+                </p>
+            </div>
+            <div>
+                <h2 class="light">
+                    Länkar
+                </h2>
+                <img src="images/facebook.png" alt="">
+                <img src="images/instagram.png" alt="">
+            </div>
+        </div>
+
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" class="hippe"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303835010&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <div
+            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/hippes_songs1" title="Hippe YT" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Hippe YT</a> · <a
+                href="https://soundcloud.com/hippes_songs1/beat-the-sound-by-hippe" title="Beat The Sound By Hippe"
+                target="_blank" style="color: #cccccc; text-decoration: none;">Beat The Sound By Hippe</a></div>
+
+    </footer>
+</body>
+
+</html>

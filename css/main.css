@@ -1,0 +1,242 @@
+/*////////////////////////////////////////////  
+            OFFICIAL TAGS
+////////////////////////////////////////////*/
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+html,
+body {
+    width: 100vw;
+    background: #E7DFDD;
+    /* background: #EFEFEF; */
+    /* background: #1A2930; */
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    font-size: 11px;
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: 0.25s ease-out;
+}
+
+h1, p, a, svg { user-select: none; }
+
+main {
+    /* background: none; */
+    background: var(--main-background);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: var(--background-offset);
+    min-height: var(--main-min-width);
+
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-content: center;
+}
+
+footer { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    padding-top: 5em;
+
+    min-height: 30vh; 
+    background-color: var(--black); 
+    color: var(--white);
+}
+
+.complete-background-cover {
+    background: linear-gradient(to right, rgb(53, 53, 53, 0.95), rgb(53, 53, 53, 0.95)), url("../images/Seamless_Shapes_2I.jpg");
+}
+
+.footer-container {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));   */
+    min-height: 30vh;
+    width: 100%;  
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: min(10%, 10em);
+    padding: 1em;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footer-container div {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer-container img {
+    width: calc(var(--medium-font) * 1.5);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+footer h2 {
+    font-size: var(--medium-font);
+    width: fit-content;
+    /* margin-block: auto; */
+    /* margin-top: 0; */
+}
+
+footer p {
+    font-style: italic;
+    width: fit-content;
+}
+
+/*////////////////////////////////////////////  
+            SECTIONS
+////////////////////////////////////////////*/
+
+section { min-height: 50vh; } 
+
+.section-2 { background: var(--white-2); }
+
+.section-3 { background: var(--white); }
+
+.section-menu { 
+    --white: #353535;
+    --black: whitesmoke;
+    --background: 93, 108, 133;
+    /* #825B5B */
+    background-image: linear-gradient(0deg, rgb(var(--background), 0.97), rgb(var(--background), 0.97)), url("../images/Seamless_Shapes_2I.jpg");
+    background-size: auto;
+    background-repeat: repeat;
+    justify-content: center;
+}
+
+.section-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-contact img {
+    width: calc(var(--medium-font) * 1.5);
+    background-color: transparent;
+    cursor: pointer;
+    filter: invert(25%);
+}
+
+.section-contact img:hover {
+    filter: invert(50%);
+}
+
+.contact-links {
+    background: var(--white);
+}
+
+.contact-location {
+    background: var(--white-2);
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: calc(100% - 1px);
+    border: none;
+}
+
+.section-comments {
+    background: transparent !important;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.section-header h2 {
+    font-size: calc(var(--medium-font) * 1.5);
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+
+.section-header img {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    filter: grayscale(100%) invert(100%) brightness(1000%) opacity(95%);
+    width: 75%;
+}
+
+.section-shadow {
+    box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hippe {
+    max-height: 5em;
+}
+
+/*////////////////////////////////////////////  
+                OTHER
+////////////////////////////////////////////*/
+
+input[type=radio] {
+    border: 1px solid #fff;
+    padding: 0.5em;
+    -webkit-appearance: none;
+}
+
+input[type=radio]:checked {
+    background: whitesmoke no-repeat center center;
+    background-size: 9px 9px;
+}
+
+/*////////////////////////////////////////////  
+                SCROLLBAR
+////////////////////////////////////////////*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--white);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--white);
+}
+
+/*////////////////////////////////////////////  
+            SMALLER SCREENS
+////////////////////////////////////////////*/
+
+
+@media screen and (max-width: 992px) {
+    main {
+        background: var(--mobile-background);
+        background-size: cover;
+    }
+
+    .section-contact {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}

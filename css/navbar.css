@@ -1,0 +1,229 @@
+.nav-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    z-index: 1; 
+
+    transition: filter 0.2s ease-in-out;
+    background-image: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 90%) 0%) !important;
+    
+}
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    transition: 0.25s ease-in-out;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0%);
+
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+
+    z-index: 100;
+}
+
+ul {
+    /* Flex */
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    gap: 3em;
+
+    width: 100%;
+    
+    margin: 1.5em;  
+    margin-left: 0em;
+    margin-right: 3em;
+    position: relative;
+    z-index: 100;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+li {
+    /* Flex */
+    position: relative;
+    border-radius: 5px;
+    margin: auto;
+    z-index: 100;}
+
+.nav-interactable {
+    display: flex;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.1s ease-out;
+    text-align: center;
+    align-content: center;
+}
+
+.nav-interactable::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: rgb(204, 204, 204);
+
+    transition: 0.25s ease-out;
+    transform: scaleX(0%);
+    transform-origin: center;
+}
+
+/* Animations */
+.nav-interactable:hover a { color: rgb(204, 204, 204); }
+.nav-interactable:hover::before {
+    transform: scaleX(100%);
+}
+
+/* Tooltip */
+li:hover .nav-tooltip {
+    filter: opacity(100%) !important;
+}
+
+.hideable-content-nav {
+    display: flex;
+    gap: 4.5em;
+}
+
+/*////////////////////////////////////////////  
+                SPECIAL CLASSES
+////////////////////////////////////////////*/
+.decrease-text-after-scroll {
+    --small-font: clamp(1rem, 0.75vw, 3rem);
+    --medium-font: clamp(1rem, 1vw, 3rem);
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 5%);
+}
+
+.nav-right { margin-right: 0; margin-left: 0; }
+
+.nav-left { margin-left: 3em; }
+
+.transition { transition: font-size 0.2s ease-in-out; }
+
+.toggle-display {
+    display: flex !important;
+}
+
+.selected {
+    outline: 1px solid;
+    outline-color: var(--white);
+    outline-offset: 1em;
+    border-radius: 0;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+
+.black-text { color: var(--black) !important; outline-color: var(--black) !important; }
+
+/*////////////////////////////////////////////  
+            HAMBURGER BUTTON
+////////////////////////////////////////////*/
+
+.hamburger-button {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.25em;
+    width: clamp(3em, 2vw, 3.5em);
+    cursor: pointer;
+
+    display: none;
+
+    transition: 0.2s ease-in-out;
+}
+
+.segment-1 {
+    transition: 0.25s ease-in-out 0ms;
+    /* transform-origin: top left; */
+    transform-origin: center;
+
+}
+
+.segment-2 {
+    transition: 0.25s ease-in-out 50ms;
+    transform-origin: center;
+}
+
+.segment-3 {
+    transition: 0.25s ease-in-out 100ms;
+    /* transform-origin: bottom left; */
+    transform-origin: center;
+}
+
+.segment-1-closed { transform: translateY(2em) translateX(-1.9em) rotate(45deg); }
+
+.segment-2-closed { transform: translateX(3em); fill: none; opacity: 0;}
+
+.segment-3-closed { transform: translateY(-2em) translateX(-1.9em) rotate(-45deg); }
+
+.hamburger-segment { width: 100%; }
+
+.hamburger-button:hover .hamburger-segment { fill: var(--black); }
+
+.hamburger-button-black .hamburger-segment {
+    fill: black !important;
+    background: none !important;
+}
+
+.hamburger-button:hover { background-color: var(--white); }
+
+/*////////////////////////////////////////////  
+                SMALLER SCREENS
+////////////////////////////////////////////*/
+
+@media screen and (max-width: 992px) {
+    ul {
+        flex-grow: 1;
+    }
+    
+    .hamburger-button {
+        display: initial;
+    }
+
+    .hideable-content-nav {
+        display: none;
+        opacity: 100%;
+        user-select: none;
+        position: absolute;
+        top: 10em;
+        left: calc(50% - 3em);
+        flex-direction: column;
+        color: white !important;
+    }
+
+    .black-text {
+        color: white !important;
+        outline-color: white !important;
+    }
+
+    li {
+        margin: auto;
+    }
+    
+    .nav-interactable {
+        cursor: default;
+    }
+
+    .link {
+        /* pointer-events: none;  */
+    }
+
+    .decrease-text-after-scroll {
+        background-color: white;
+        box-shadow: none;
+    }
+
+    .nav-toggle-background {
+        display: block;
+    }
+}

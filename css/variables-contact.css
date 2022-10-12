@@ -1,0 +1,27 @@
+:root {
+    /* Colors */
+    --white: #D7CEC7;
+    --tint: #565656;
+    --accent: #96858F;
+
+    --blur: blur(10px);
+
+    --white: whitesmoke;
+    --white-2: rgb(240, 236, 231);
+    --black: #353535;
+    --comments-bg: rgba(122, 100, 113, 0.99);
+
+    /* Font */
+    --large-font: clamp(6rem, 6vw, 12rem);
+    --medium-font: clamp(2rem, 1.5vw, 3rem);
+    --small-font: clamp(1.5rem, 1.25vw, 2rem);
+    --smaller-font: clamp(1.25rem, 0.75vw, 2rem);
+    --nav-font: clamp(1.25rem, 0.5vw, 1.5rem);
+
+    /* Other configurations */
+    --main-min-width: 50vh;
+    /* --main-background: linear-gradient(to right, rgb(53, 53, 53, 0.95), rgb(53, 53, 53, 0.95)), url("../images/Seamless_Shapes_2I.jpg"); */
+    --main-background: transparent;
+    --mobile-background: transparent;
+    --background-offset: top;
+}

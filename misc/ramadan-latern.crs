@@ -1,0 +1,18 @@
+﻿[Arrow]
+Path=Normal Select.cur
+
+[Help]
+Path=Help Select.ani
+
+[AppStarting]
+Path=Working in Background.ani
+
+[Wait]
+Path=Busy.ani
+
+[Crosshair]
+Path=Precision Select.cur
+
+[IBeam]
+Path=Text Select.cur
+
